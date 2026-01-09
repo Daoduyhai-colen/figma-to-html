@@ -1,10 +1,11 @@
-.box{
-    background-color: blue;
-    border: 1px solid black
+* {
+    box-sizing: border-box;
 }
 
-.container{
-    display: flex;
-    background-color: cyan;
-    height: 200px;
+html{
+    font-size: 62.5%;
+}
+/* Khôi phục lại cỡ chữ mặc định tính theo rem */
+body{
+    font-size: 1.6rem;
 }
