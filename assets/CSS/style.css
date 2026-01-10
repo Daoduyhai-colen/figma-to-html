@@ -10,22 +10,77 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-a{
-    text-decoration: none;
-}
-.main-content{
-    width: 1170px;
-    max-width: (100% - 48px);
-    margin-left:auto;
-    margin-right: auto;
-}
-.header .body{
-    display: flex;
-}
-.nav {
-    margin-left: auto;
-}
-.nav ul{
-    display: flex;
+/* ===============common============ */
+a {
+  text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0px 16px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background-color: #171100;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===========header============= */
+.header {
+  background-color: #FFFCF4;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+.header .body {
+  padding: 36px 0px 8px;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0px 0 currentColor;
+}
+.nav li.active a::after {
+  display: block;
+  left: 21px;
+  bottom: 6px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: black;
+  position: absolute;
+}
+
+.header .btn-signUp {
+  min-width: 144px;
+}
+
+.header .action{
+    margin-left: 49px;
+}
