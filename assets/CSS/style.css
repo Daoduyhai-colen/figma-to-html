@@ -312,14 +312,14 @@ a {
   margin-top: 20px;
 }
 .footer .bottom .container {
-  padding-top: 15px;
+  margin: 12px;
   width: 326px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 .footer .bottom {
-  padding-top: 100px;
-  padding-bottom: 250px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -348,6 +348,7 @@ a {
 }
 
 .container > p {
+  margin-top: 8px;
   font-size: 1.4rem;
   line-height: 26px;
   color: #5f5b53;
@@ -382,6 +383,7 @@ a {
 }
 
 .bottom .pricing {
+  margin-top: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,10 +396,93 @@ a {
   line-height: 30px;
   color: #171100;
 }
-.bottom .pricing .btn{
+.bottom .pricing .btn {
   font-size: 1.4rem;
   border-radius: 25px;
 }
-.bottom .pricing .btnimage1{
-  background-color: #FFB900;
+.bottom .pricing .btnimage1 {
+  background-color: #ffb900;
 }
+
+.exp {
+  margin-top:100px;
+  display: flex;
+  background-color: #2e2100;
+  height: 380px;
+  align-items: center;
+  justify-content: center;
+}
+.exp .body {
+  height: 188px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exp .Author {
+  margin-right: auto;
+}
+
+.Author .Peter {
+  border-radius: 100%;
+}
+.Author .name {
+  margin-top: 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 34px;
+  color: #f7f7f7;
+}
+
+.Author .educations {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+.Author .logo{
+  margin-top: 20px;
+}
+/* Container tổng - Đảm bảo không có overflow: hidden ở đây */
+.exp .speaker {
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung nếu cần */
+  position: relative;
+  margin-top: 50px; /* Tạo khoảng cách phía trên */
+}
+
+.exp .speaker .parents {
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 40px;
+  color: #ffffff;
+  width: 740px;
+  position: relative; /* BẮT BUỘC: Làm điểm tựa cho mimic */
+  z-index: 1;
+}
+
+.exp .speaker .mimic {
+  position: absolute; /* Chạy theo thẻ .parents */
+  display: block; /* Đảm bảo hiển thị */
+
+  /* Tọa độ căn chỉnh */
+  bottom: 0; /* Đưa xuống sát đáy của khối parents */
+  left: 0px; /* Đẩy sang trái để nằm ngoài chữ N */
+
+  /* Nếu muốn nó nằm chính xác ở chân dòng đầu tiên (chữ N) */
+  /* Bạn dùng top thay vì bottom */
+  top: -30px;
+  left: -20px;
+
+  z-index: 999; /* Đưa lên lớp trên cùng */
+}
+
+.exp .speaker .mimic img {
+  width: 28px;
+  height: 30px; /* Đảm bảo ảnh có kích thước để nhìn thấy */
+  height: auto;
+  display: block;
+}
+
+
+
