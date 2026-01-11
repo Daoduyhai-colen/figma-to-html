@@ -245,7 +245,8 @@ a {
 /* ====footer */
 
 .footer {
-  padding: 200px 0px;
+  padding: 65px 0px;
+  margin-top: 135px;
 }
 
 .footer .up {
@@ -260,14 +261,15 @@ a {
 
 .footer .right {
   display: flex;
+  gap: 18px;
 }
 .footer .right button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
 }
 .footer .arrowleft {
-  margin-right: 8px;
   width: 40px;
   height: 40px;
   border: 1px solid yellow;
